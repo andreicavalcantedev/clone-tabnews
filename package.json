@@ -9,7 +9,9 @@
     "lint:fix": "prettier --write .",
     "lint:ignore": "prettier . --write --ignore-path=.prettierignore",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "services:up": "docker-compose -f infra/compose.yaml up -d",
+    "services:down": "docker-compose -f infra/compose.yaml down"
   },
   "author": "",
   "license": "MIT",
